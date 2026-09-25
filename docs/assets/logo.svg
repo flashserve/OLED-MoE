@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">OLED-MoE logo</title>
+  <desc id="desc">A futuristic self-emitting OLED core surrounded by a geometric circuit frame.</desc>
+
+  <defs>
+    <linearGradient id="background" x1="24" y1="18" x2="232" y2="238" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#111936"/>
+      <stop offset="0.55" stop-color="#263b86"/>
+      <stop offset="1" stop-color="#5068dd"/>
+    </linearGradient>
+    <radialGradient id="core" cx="44%" cy="38%" r="68%">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.24" stop-color="#fff7aa"/>
+      <stop offset="0.52" stop-color="#91f5ff"/>
+      <stop offset="0.78" stop-color="#42cce9"/>
+      <stop offset="1" stop-color="#5268e3"/>
+    </radialGradient>
+    <linearGradient id="frame" x1="55" y1="47" x2="201" y2="209" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff5a4"/>
+      <stop offset="0.45" stop-color="#9af5ff"/>
+      <stop offset="1" stop-color="#60d3ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#070c22" flood-opacity="0.38"/>
+    </filter>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="8" y="8" width="240" height="240" rx="54" fill="url(#background)" filter="url(#shadow)"/>
+
+  <!-- Circuit traces -->
+  <g fill="none" stroke="#8cecff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="0.82">
+    <path d="M31 82 H60 L78 100"/>
+    <path d="M31 174 H60 L78 156"/>
+    <path d="M225 82 H196 L178 100"/>
+    <path d="M225 174 H196 L178 156"/>
+    <path d="M82 31 V56 L99 76"/>
+    <path d="M174 31 V56 L157 76"/>
+    <path d="M82 225 V200 L99 180"/>
+    <path d="M174 225 V200 L157 180"/>
+  </g>
+  <g fill="#fff5a4">
+    <circle cx="31" cy="82" r="6"/>
+    <circle cx="31" cy="174" r="6"/>
+    <circle cx="225" cy="82" r="6"/>
+    <circle cx="225" cy="174" r="6"/>
+    <circle cx="82" cy="31" r="6"/>
+    <circle cx="174" cy="31" r="6"/>
+    <circle cx="82" cy="225" r="6"/>
+    <circle cx="174" cy="225" r="6"/>
+  </g>
+
+  <!-- Geometric OLED housing -->
+  <path d="M128 48 L183 80 L183 176 L128 208 L73 176 L73 80 Z" fill="#142248" fill-opacity="0.52" stroke="url(#frame)" stroke-width="6"/>
+  <path d="M128 66 L167 89 L167 167 L128 190 L89 167 L89 89 Z" fill="none" stroke="#a9efff" stroke-width="3" opacity="0.62"/>
+
+  <!-- Self-emitting OLED core -->
+  <g filter="url(#glow)">
+    <circle cx="128" cy="128" r="55" fill="#78e9ff" opacity="0.16"/>
+    <circle cx="128" cy="128" r="43" fill="url(#core)" stroke="#ffffff" stroke-width="6"/>
+    <circle cx="128" cy="128" r="25" fill="#faffff" opacity="0.95"/>
+    <ellipse cx="116" cy="114" rx="12" ry="9" fill="#ffffff" opacity="0.95"/>
+  </g>
+
+  <!-- Fine technology accents -->
+  <g fill="#ffffff" opacity="0.92">
+    <circle cx="128" cy="55" r="4"/>
+    <circle cx="201" cy="128" r="4"/>
+    <circle cx="128" cy="201" r="4"/>
+    <circle cx="55" cy="128" r="4"/>
+  </g>
+</svg>

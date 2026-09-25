@@ -1,0 +1,4 @@
+name = "dInfer"
+repository = "https://github.com/inclusionAI/dInfer.git"
+revision = "1ffeb961cd258bede74fcf5ca8a416ae6d57b18f"
+integration = "sibling checkout exposed through OLED_DINFER_PATH"

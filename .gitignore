@@ -1,0 +1,77 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.pyright/
+.ruff_cache/
+.hypothesis/
+
+# Packaging and native build products
+build/
+dist/
+.eggs/
+*.egg-info/
+wheels/
+pip-wheel-metadata/
+*.so
+*.o
+*.a
+
+# Virtual environments and local configuration
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+!.env.example
+
+# Tests, coverage, and profiling artifacts
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+*.prof
+*.nsys-rep
+*.qdrep
+*.sqlite
+
+# Runtime output
+runs/
+reports/
+logs/
+*.log
+
+# Model weights and checkpoints
+/models/
+/checkpoints/
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.onnx
+
+# Editors and operating systems
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Temporary files and crash dumps
+tmp/
+temp/
+*.tmp
+*.bak
+/core
+/core.*
+
+# Local datasets, archives, and release staging
+/datasets.json
+*.tar
+*.tar.gz
+*.tgz
+*.zip

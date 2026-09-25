@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oled-moe"
+version = "0.1.0.dev0"
+description = "Offloaded expert runtime for MoE diffusion language models"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "torch>=2.4",
+  "transformers>=4.45",
+  "safetensors>=0.4",
+]
+
+[project.optional-dependencies]
+dev = ["httpx>=0.27", "pytest>=8", "ruff>=0.6"]
+server = ["fastapi>=0.115,<1", "uvicorn>=0.30,<1"]
+
+[project.scripts]
+oled-moe = "oled_moe.cli.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
