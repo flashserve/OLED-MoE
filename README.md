@@ -201,3 +201,16 @@ oled-moe serve --help
 
 See [Architecture](docs/architecture.md) for the package boundaries and runtime
 data flow.
+
+## Citation
+
+If you use this codebase, or otherwise found our work valuable, please cite:
+
+```bibtex
+@article{xiao2027oledmoe,
+  title={OLED-MoE: Accelerating MoE-Based dLLM Inference via Inter-Iteration Locality-Aware Expert Offloading},
+  author={Jingyuan Xiao, Jiayue Wang, Yitao Hu, Xinning Wang, Shi Chen, Ziqi Gong, Zhengchao Wang, Guotao Yang, Sheng Chen, Keqiu Li},
+  booktitle={Proceedings of the 22nd European Conference on Computer Systems (EuroSys ’27)},
+  year={2027}
+}
+```
