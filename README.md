@@ -70,7 +70,7 @@ Download or mount a complete
 ### 1. Clone the repositories
 
 ```bash
-git clone https://github.com/xjy1121/OLED-MoE-test.git OLED-MoE
+git clone https://github.com/flashserve/OLED-MoE.git OLED-MoE
 git clone https://github.com/inclusionAI/dInfer.git dInfer
 git -C dInfer checkout 1ffeb961cd258bede74fcf5ca8a416ae6d57b18f
 ```
